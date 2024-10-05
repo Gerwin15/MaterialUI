@@ -5,6 +5,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
+import AddIcon from '@mui/icons-material/Add';
 
 const ShoppingList = () => {
   const [items, setItems] = useState([]);
@@ -34,7 +35,7 @@ const ShoppingList = () => {
           onChange={(e) => setInput(e.target.value)}
         />
         <IconButton color="primary" onClick={addItem}>
-          <DeleteIcon />
+          <AddIcon />
         </IconButton>
       </div>
       <List>
